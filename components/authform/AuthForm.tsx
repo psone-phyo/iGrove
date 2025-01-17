@@ -24,21 +24,28 @@ const AuthForm = ({
   footerLabel,
   footerLink,
 }: AuthFormProps) => {
+
   return (
+    <div>
       <Card>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
         </CardHeader>
         <CardContent>
-          {children}
+          <div>
+            {children}
+          </div>
         </CardContent>
         <CardFooter className="flex flex-col justify-center items-start">
-            <div>
-            {showProvider && <ProviderLogin/>}
+            <div className="w-full">
+            {showProvider && <ProviderLogin />}
+            <div className="mt-1">
+            <AuthFooter footerLabel={footerLabel} footerLink={footerLink} />
             </div>
-            <AuthFooter footerLabel={footerLabel} footerLink={footerLink}/>
+            </div>
         </CardFooter>
       </Card>
+    </div>
   );
 };
 

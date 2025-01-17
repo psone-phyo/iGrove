@@ -8,6 +8,13 @@
       "when": 1736574859482,
       "tag": "0000_tough_the_renegades",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1737009818661,
+      "tag": "0001_slimy_juggernaut",
+      "breakpoints": true
     }
   ]
 }

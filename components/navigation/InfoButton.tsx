@@ -15,7 +15,7 @@ const InfoButton = ({user}: Session) => {
         {user?.email ? (
             <Button variant={"destructive"} onClick={()=>signOut()}>Log Out</Button>
         ) : (
-            <Link href={'/api/auth/signin'}>
+            <Link href={'/auth/login'}>
                 <Button>
                     <LogInIcon/>Log In
                 </Button>
